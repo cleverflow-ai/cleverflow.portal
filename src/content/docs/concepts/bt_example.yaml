@@ -1,0 +1,24 @@
+root:
+  name: ManWalkingThruDoorToEnterRoom
+  goto:
+    - node: SEQUENCE
+      name: TryToOpenDoorAndEnterRoom
+      goto:
+        - node: FALLBACK
+          name: null
+          goto:
+            - node: CONDITION
+              name: IsDoorOpen
+            - node: ACTION
+              name: OpenDoor
+            - node: SEQUENCE
+              name: UnlockDoorIfItIsLocked
+              goto:
+                - node: CONDITION
+                  name: IsDoorLocked
+                - node: ACTION
+                  name: UnlockDoor
+            - node: ACTION
+              name: SmashDoor
+        - node: ACTION
+          name: EnterRoom

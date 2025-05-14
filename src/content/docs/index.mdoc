@@ -1,0 +1,76 @@
+---
+title: Welcome to CLEVER°FLOW
+description: Headless Framework for Agentic Documents.
+template: splash
+hero:
+  title: |
+    Welcome to
+    <span
+      class="font-black text-transparent
+        bg-clip-text bg-gradient-to-b
+        from-accent-700 to-accent-400
+        dark:from-accent-500 dark:to-accent-200"
+    >
+      CLEVER°FLOW
+    </span>
+  tagline: Headless Framework for <strong>Agentic Documents</strong>.
+  image:
+    file: ../../assets/setonix_logo.png
+  actions:
+    - text: Example Guide
+      link: /guides/example/
+      icon: right-arrow
+    - text: About CLEVER°NOW
+      link: https://clevernow.com
+      icon: external
+      variant: minimal
+---
+
+### What is Agentic Document?
+An Agentic Document refers to a document that is dynamically managed, processed, or utilized by AI agents within an agentic workflow. These workflows leverage advanced AI systems capable of reasoning, decision-making, and executing tasks autonomously.
+The candidates include documents regarding onboarding processes, reclamation policies, and documentation of internal, technical knowledge for manufacturing or troubleshooting. 
+
+![How does Operational Document work?](../../assets/CleverFlow-HowItWorks.png)
+
+### When do we need Agentic Documents?
+Link different types of documents and data sources to create a unified view of information.
+Automate the processing of documents to reduce manual effort and errors.
+Turn static documents into interactive and dynamic content.
+Extract key data from unstructured or semi-structured content.
+Analyze and interpret information to answer complex queries or generate insights.
+Adapt workflows based on real-time changes in data or user requirements
+
+### Why is it important to automate Operational Documents?
+Automation enables a Single Place of Truth for both documentation and its use:
+- Content writers can visualize and test the logic of their documents at the time of composition.
+- Supporters can visually find and prove the answer to an input query with the given documents in their daily business.
+- Technicians can integrate ad hoc Agentic Solutions into these documents to enable interactivity and automatic processing.
+
+### Who are we?
+CLEVER°FLOW plays a central role in documenting and reasoning Technical and Support Documents within our [CLEVER°NOW Eco-System](https://clevernow.com).
+
+### What are Core Concepts?
+
+{% cardgrid %}
+{% card title="Interactive Content with Markdoc" icon="seti:markdown" %}
+Markdown `.md` and the interactive flavor Markdoc `.mdoc` (invented by Stripe) are used to create documents.
+
+[Read more](/docs/interactive-content) 
+{% /card %}
+
+{% card title="Simple Logics with Behaviour Tree" icon="seti:puppet" %}
+Behaviour Trees are visually used to define the logic required in the documents.
+{% /card %}
+
+{% card title="Scalabilty and Observability with Event-Sourcing" icon="seti:vite" %}
+Inference process is persisted as a sequence of events, which can be replayed to recreate the state of the system at any point in time.
+{% /card %}
+
+{% card title="Integration with Agentic AI Frameworks" icon="seti:bicep" %}
+Easily integrate with your favorite Agentic AI Frameworks such as LangGraph, Microsoft AutoGen, etc
+{% /card %}
+
+{% card title="Pluggability with Web Components" icon="seti:webpack" %}
+Easily plug in any Website to create a rich user experience.
+{% /card %}
+{% /cardgrid %}

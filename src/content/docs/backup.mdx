@@ -1,0 +1,64 @@
+---
+title: Welcome to CLEVER°FLOW
+description: An Agentic, Event-driven Platform for automating Operational Documents.
+template: splash
+hero:
+  title: |
+    Welcome to
+    <span
+      class="font-black text-transparent
+        bg-clip-text bg-gradient-to-b
+        from-accent-700 to-accent-400
+        dark:from-accent-500 dark:to-accent-200"
+    >
+      CLEVER°FLOW
+    </span>
+  tagline: |
+    An Agentic Platform for automating <strong>Operational Documents</strong>.
+  image:
+    file: ../../assets/setonix_logo.png
+  actions:
+    - text: Example Guide
+      link: /guides/example/
+      icon: right-arrow
+    - text: About CLEVER°NOW
+      link: https://clevernow.com
+      icon: external
+      variant: minimal
+---
+
+import { Card, CardGrid } from '@astrojs/starlight/components';
+
+### What is Operational Documentation?
+Operational documentation is the written documentation necessary to operate a business. Examples include onboarding processes, reclamation policies, and documentation of internal, technical knowledge for manufacturing or troubleshooting. 
+Operational documentation is relevant for the vast majority of employees in the company.
+
+### What does it mean “Automation of Operational Documents”?
+Human writers create Operational Documents for future use in the desired business context. 
+Automation bridges the gap between documentation and its use.
+
+### Why is it important to automate Operational Documents?
+Automation enables a Single Place of Truth for both documentation and its use:
+- Content writers can visualize and test the logic of their documents at the time of composition.
+- Supporters can visually find and prove the answer to an input query with the given documents in their daily business.
+- Technicians can integrate ad hoc Agentic Solutions into these documents to enable interactivity and automatic processing.
+
+### Who are we?
+CLEVER°FLOW plays a central role in documenting and reasoning Technical and Support Documents within our [CLEVER°NOW Eco-System](https://clevernow.com).
+
+### What are Core Concepts?
+
+<CardGrid stagger>
+	<Card title="Update content" icon="pencil">
+		Edit `src/content/docs/index.mdx` to see this page change.
+	</Card>
+	<Card title="Add new content" icon="add-document">
+		Add Markdown or MDX files to `src/content/docs` to create new pages.
+	</Card>
+	<Card title="Configure your site" icon="setting">
+		Edit your `sidebar` and other config in `astro.config.mjs`.
+	</Card>
+	<Card title="Read the docs" icon="open-book">
+		Learn more in [the CLEVER°FLOW Docs](/).
+	</Card>
+</CardGrid>
