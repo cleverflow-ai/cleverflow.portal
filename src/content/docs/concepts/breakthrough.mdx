@@ -4,6 +4,7 @@ description: An Agentic, Event-driven Platform for automating Operational Docume
 ---
 import { Code } from '@astrojs/starlight/components';
 import { Steps } from '@astrojs/starlight/components';
+import Mermaid from '../../../components/Mermaid.astro';
 
 export const example1 = `
     ---
@@ -45,6 +46,20 @@ export const example2 = `
     {% /cleverflow %}
 `;
 export const highlights2 = ["- engine:"];
+
+<Mermaid title='Dummy Graph'>
+```mermaid
+    %%{
+        init: {
+            'theme':'neutral'
+        }
+    }%%
+    graph TD;
+        A[Onboarding Process] --> B{Is the employee a developer?};
+        B -- Yes --> C[Assign to Developer Team];
+        B -- No --> D[Assign to Designer Team];
+```
+</Mermaid>
 
 ## Step 1: Content Writer composes Interactive Document with Markdoc
 
