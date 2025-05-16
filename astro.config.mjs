@@ -22,12 +22,9 @@ export default defineConfig({
 			sidebar: [
 				{
 					label: 'Concepts',
-					items: [
-						{
-							label: 'Breakthrough',
-							slug: 'concepts/breakthrough'
-						},
-					],
+					autogenerate: {
+						directory: 'concepts'
+					},
 				},
 				{
 					label: 'Guides',

@@ -30,11 +30,11 @@ const { title = "Mermaid Diagram" } = Astro.props;
             // Extract the text content from each line div
             const codeLines = codeElement.querySelectorAll(".ec-line .code");
             let cleanedCode = Array.from(codeLines)
-                .map((line) => (line.textContent ? line.textContent.trim() : ""))
+                .map((line) => (line.textContent ? line.textContent : ""))
                 .join("\n");
 
             // Remove any leading/trailing whitespace
-            cleanedCode = cleanedCode.trim();
+            // cleanedCode = cleanedCode.trim();
 
             // Create a new pre element with just the cleaned code
             const newPreElement = document.createElement("pre");
@@ -59,7 +59,10 @@ const { title = "Mermaid Diagram" } = Astro.props;
     // Wait for the DOM to be fully loaded
     document.addEventListener("DOMContentLoaded", async () => {
         extractAndCleanMermaidCode();
-        mermaid.initialize({ startOnLoad: true });
+        mermaid.initialize({ 
+            startOnLoad: true,
+            theme: "default",
+        });
     });
 </script>
 
